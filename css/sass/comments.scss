@@ -1,0 +1,146 @@
+ol.commentlist {
+	list-style: none;
+
+	li {
+
+		&.alt { }
+		&.bypostauthor { }
+		&.byuser { }
+		&.comment-author-admin { }
+		&.comment {
+			@extend .shadowed;
+			border-top: 1px dashed $dark-bn;
+			margin-bottom: 15px;
+			padding: 15px;
+
+			div {
+				&.comment-author { }
+				&.vcard {
+					cite.fn {
+						font-style: normal;
+						a { color: #fff; }
+						a:hover { color: $dark-bn; }
+						a.url { }
+					}
+
+					img {
+						&.avatar { float:right; margin: 0 0 10px 10px; }
+						&.avatar-32 { }
+						&.photo { }
+					}
+
+					span.says { }
+				}
+
+				&.commentmetadata { }
+
+				&.comment-meta {
+					font-size: 11px;
+					a { color: $green; }
+					a:hover { color: $dark-bn; }
+				}
+
+				&.reply {
+					font-size: 11px;
+					a { font-weight: bold; }
+					a:hover { color: $dark-bn; }
+				}
+			}
+
+			p { }
+
+			ul {
+				&.children {
+					list-style: none; margin: 10px 0 0;
+
+					li {
+						background: none;
+						box-shadow: none;
+						margin: 0 0 10px 10px;
+
+						&.alt { }
+						&.bypostauthor { }
+						&.byuser { }
+						&.comment { }
+						&.comment-author-admin { }
+						&.depth-2 { }
+						&.depth-3 { }
+						&.depth-4 { }
+						&.depth-5 { }
+						.odd { }
+					}
+				}
+			}
+		}
+
+		&.even {  }
+		&.odd {  }
+		&.parent { }
+		&.thread-alt { }
+		&.thread-even { }
+		&.thread-odd { }
+	}
+
+	> li.depth-1 { border: none; }
+}
+
+form { }
+input[type=text] { }
+textarea { }
+
+#respond {
+	textarea { @extend .shadowed; }
+
+	#submit {
+		@extend .btn_submit;
+		&:hover {
+			@extend .btn_submit_hover;
+		}
+	}
+}
+li.comment {
+	#respond {
+		h2 { color: #fff; margin-top: 10px; }
+
+		input, textarea {
+			border: 1px solid #492F17;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			-o-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+
+	.cancel-comment-reply { margin-bottom: 15px; }
+}
+
+#respond form#commentform { margin: 0 10px 35px; }
+
+#commentform {
+	> p { @extend .global-text; }
+	#submit { width: 150px; }
+}
+.logged-in {
+	#commentform {
+		> p { 
+			a { color: #fff; }
+		}
+	}
+}
+.comment-subscription-form {
+	#subscribe_comments {
+		height: auto;
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+	}
+	#subscribe_blog { @extend #subscribe_comments }
+
+	#subscribe-label {
+		display: inline;
+		font-size: 0.875em;
+		font-weight: normal;
+		margin-left: 10px;
+	}
+	#subscribe-blog-label { @extend #subscribe-label }
+}

@@ -1,0 +1,125 @@
+/* Global Post Styles */
+.blog h2 a,
+.archive h2 a { color: $dark-bn; }
+
+.post {
+	background: rgba(255,255,255, 0.45);
+	box-shadow: 3px 3px 9px -3px $light-bn;
+	margin-bottom: 55px;
+	padding: 15px 25px;
+
+	a.more-link { color: $dark-bn; margin: 0; }
+}
+
+.entry {
+	p {
+		@extend .global-text;
+		margin: 0 15px 15px;
+	}
+
+	a { color:$light-bn;
+		&:hover { color:$dark-bn; }
+	}
+
+	ul {
+		margin: 0 0 .5em 1em;
+		list-style-type: square;
+
+		li {
+			white-space: pre;           /* CSS 2.0 */
+			white-space: pre-wrap;      /* CSS 2.1 */
+			white-space: pre-line;      /* CSS 3.0 */
+			white-space: -pre-wrap;     /* Opera 4-6 */
+			white-space: -o-pre-wrap;   /* Opera 7 */
+			white-space: -moz-pre-wrap; /* Mozilla */
+			white-space: -hp-pre-wrap;  /* HP Printers */
+			word-wrap: break-word;      /* IE 5+ */
+		}
+	}
+}
+
+.blog, .single {
+	.entry {
+		padding: 0 15px 0;
+
+		p { margin: 0 0 15px; }
+
+		a {
+			&:hover { }
+		}
+	}
+}
+
+
+.meta {
+	color: $light-bn;
+	font-size: 0.875em; /* 14px / 16px */
+	margin-bottom: 10px;
+	padding: 0 15px 0;
+
+	a {
+		color:$dark-bn;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow: none;
+
+		&:hover { text-decoration: underline; }
+	}
+}
+
+pre {
+	@extend .shadowed;
+	color: white;
+	font-family: Monaco, Courier, MonoSpace;
+	line-height: 1.8;
+	font-size: 12px;
+	padding: 10px;
+	position: relative;
+	margin: 0;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+code, tt { font: 12px Monaco, Courier, MonoSpace; }
+
+#meta { }
+
+.postmetadata { @extend .meta; margin: 10px 0 0; }
+
+#sidebar { }
+
+.navgation { }
+   .next-posts { }
+   .prev-posts { }
+
+#searchform { }
+	#s { }
+	#searchsubmt { }
+
+
+/* Mico Post Styles */
+a.post-edit-link {
+	color:$light-bn;
+	&:hover { color: #fff; }
+}
+
+.list-item {
+	margin: 25px auto;
+
+	&.first { margin-top: 10px; }
+	&.last { margin-bottom: 30px; }
+}
+.list-image {
+	@extend .image-frame;
+	width: 35%;
+	float: left;
+	margin-right: 5%;
+}
+.list-desc {
+	width: 60%;
+	float: right;
+
+	h4 {
+		margin: 0 0 5px;
+	}
+}

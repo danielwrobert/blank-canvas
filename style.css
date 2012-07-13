@@ -1,0 +1,13 @@
+/*
+Theme Name: Blank Stare
+Theme URI: http://cupofvoodoo.com/
+Description: A blank starting point for WordPress theme development.
+Version: 1.5
+Author: Daniel W. Robert
+Author URI: http://www.cupofvoodoo.com
+*/
+
+
+/* Main stylesheet
+----------------------------------------------- */
+@import url("css/stylesheets/style.css");

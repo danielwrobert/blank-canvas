@@ -1,0 +1,74 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+.sass-cache
+_old
+css/_old
+css/stylesheets/comments.css
+css/stylesheets/config.css
+css/stylesheets/fonts.css
+css/stylesheets/footer.css
+css/stylesheets/global.css
+css/stylesheets/header.css
+css/stylesheets/helpers.css
+css/stylesheets/ie.css
+css/stylesheets/lightbox-0.5.css
+css/stylesheets/media-ipad.css
+css/stylesheets/media-landscape.css
+css/stylesheets/media-large.css
+css/stylesheets/media-portrait.css
+css/stylesheets/normalize.css
+css/stylesheets/page-contact.css
+css/stylesheets/page-portfolio.css
+css/stylesheets/page.css
+css/stylesheets/post.css
+css/stylesheets/print.css
+css/stylesheets/sidebar.css
+modules/custom-slide-posts.php
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+
+# Dreamweaver added files
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Espresso
+*.esproj
+*.espressostorage
+
+# Rubinius
+*.rbc
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+intermediate
+publish
+.idea
+
+# build script local files
+build/buildinfo.properties
+build/config/buildinfo.properties
