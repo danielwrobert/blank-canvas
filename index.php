@@ -22,13 +22,11 @@
 
 	<?php endwhile; ?>
 	
-    <!-- TODO: Consider removing this include and creating a function, like done in the WPTuts tutorial -->
 	<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
 	<?php else : ?>
 
 		<h2>Sorry, no posts today!</h2>
-		<img src="<?php bloginfo('template_directory'); ?>/img/voodoo-doll.png" id="main-img" alt="voodoo-doll" />
 
 	<?php endif; ?>
 

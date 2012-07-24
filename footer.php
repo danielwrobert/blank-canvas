@@ -14,7 +14,7 @@
 
 
     <script> // Change UA-XXXXX-X to be your site's ID
-        window._gaq = [['_setAccount','UA-23832336-1'],['_trackPageview'],['_trackPageLoadTime']];
+        window._gaq = [['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
         Modernizr.load({
             load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
         });

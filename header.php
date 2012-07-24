@@ -31,9 +31,9 @@
 		         echo ' - page '. $paged; }
 		   ?>
     </title>
-    <meta name="author" content="Daniel Robert" />
+    <meta name="author" content="" />
     <meta name="copyright" content="Copyright © 2012" />
-    <meta name="description" content="Cup of Voodoo, by Daniel Robert" />
+    <meta name="description" content="" />
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
