@@ -40,10 +40,10 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
-    <!-- CSS concatenated and minified via ant build script-->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <!-- end CSS-->
+    <!-- CSS concatenated and minified via ant build script -->
+    <!-- <link rel="stylesheet" href="<?php //bloginfo('template_directory'); ?>/css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="<?php //bloginfo('stylesheet_url'); ?>"> -->
+    <!-- end CSS -->
     
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
